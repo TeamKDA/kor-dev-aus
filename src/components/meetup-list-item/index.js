@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import './styles.scss'
 
-const IssueListItem = ({ index, path, date, title, excerpt }) => {
+const IssueListItem = ({ path, date, title }) => {
     return (
         <div className="issue-list-item">
             <Link to={path} className="issue-list-item__link">

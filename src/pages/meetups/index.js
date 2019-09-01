@@ -5,6 +5,23 @@ import { graphql } from 'gatsby'
 import MeetupListItem from '../../components/meetup-list-item'
 import './styles.scss'
 
+export const pageQuery = graphql`
+    query IssueList {
+        allMarkdownRemark(
+            sort: { order: DESC, fields: [frontmatter___date] }
+        ) {
+            nodes {
+                frontmatter {
+                    date(formatString: "YYYY년 M월 DD일")
+                    path
+                    title
+                    excerpt
+                }
+            }
+        }
+    }
+`
+
 const Issues = ({ data }) => {
     const { nodes } = data.allMarkdownRemark
     return (
@@ -29,23 +46,5 @@ const Issues = ({ data }) => {
         </Layout>
     )
 }
-
-export const pageQuery = graphql`
-    query IssueList {
-        allMarkdownRemark(
-            sort: { order: DESC, fields: [frontmatter___date] }
-        ) {
-            nodes {
-                frontmatter {
-                    date(formatString: "YYYY년 M월 DD일")
-                    path
-                    title
-                    excerpt
-                }
-            }
-        }
-    }
-`
-
 
 export default Issues

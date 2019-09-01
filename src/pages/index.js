@@ -2,14 +2,8 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Meetup from '../components/meetup'
 
-const IndexPage = ({ data }) => {
-    const { nodes } = data.allMdx
-    const post = nodes && nodes[0]
-    return <Meetup post={post} />
-}
-
 export const pageQuery = graphql`
-    query LastIssue {
+    query LastMeetup {
         allMdx(sort: { order: DESC, fields: [frontmatter___date] }, limit: 1) {
             nodes {
                 frontmatter {
@@ -22,5 +16,11 @@ export const pageQuery = graphql`
         }
     }
 `
+
+const IndexPage = ({ data }) => {
+    const { nodes } = data.allMdx
+    const post = nodes && nodes[0]
+    return <Meetup post={post} />
+}
 
 export default IndexPage
