@@ -17,7 +17,7 @@ const Header = ({ siteTitle }) => (
                 <div>
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item">
-                            <Link className="nav-link" to="/issues/">
+                            <Link className="nav-link" to="/meetups/">
                                 지난 모임
                             </Link>
                         </li>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Issue from '../../components/issue'
+import Meetup from '../../components/meetup'
 
 export const pageQuery = graphql`
     query($id: String!) {
@@ -17,5 +17,5 @@ export const pageQuery = graphql`
 
 export default ({ data }) => {
     const post = data.mdx
-    return <Issue post={post} />
+    return <Meetup post={post} />
 }

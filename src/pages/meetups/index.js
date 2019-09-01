@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 import { graphql } from 'gatsby'
-import IssueListItem from '../../components/issue-list-item'
+import MeetupListItem from '../../components/meetup-list-item'
 import './styles.scss'
 
 const Issues = ({ data }) => {
@@ -18,7 +18,7 @@ const Issues = ({ data }) => {
                             <ol className="issues__list">
                                 {nodes.map(({ frontmatter }, index) => (
                                     <li key={frontmatter.date} className="issues__list-item">
-                                        <IssueListItem {...frontmatter} index={++index} />
+                                        <MeetupListItem {...frontmatter} index={++index} />
                                     </li>
                                 ))}
                             </ol>

@@ -1,11 +1,11 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Issue from '../components/issue'
+import Meetup from '../components/meetup'
 
 const IndexPage = ({ data }) => {
     const { nodes } = data.allMdx
     const post = nodes && nodes[0]
-    return <Issue post={post} />
+    return <Meetup post={post} />
 }
 
 export const pageQuery = graphql`

@@ -9,9 +9,6 @@ const IssueListItem = ({ index, path, date, title, excerpt }) => {
                 <span className="issue-list-item__index">{title}</span>
             </div>
             <div className="issue-list-item__date">{date}</div>
-            <Link to={path} className="issue-list-item__link">
-                <p className="issue-list-item__excerpt">{excerpt}</p>
-            </Link>
         </div>
     )
 }

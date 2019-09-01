@@ -23,7 +23,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 exports.createPages = ({ graphql, actions }) => {
     const { createPage } = actions
-    const newsLetterPostTemplate = path.resolve(`src/templates/issue/index.js`)
+    const meetupTemplate = path.resolve(`src/templates/meetup/index.js`)
     return graphql(` {
         allMdx {
             edges {
@@ -45,7 +45,7 @@ exports.createPages = ({ graphql, actions }) => {
         result.data.allMdx.edges.forEach(({ node }) => {
             createPage({
                 path: node.frontmatter.path,
-                component: newsLetterPostTemplate,
+                component: meetupTemplate,
                 slug: node.fields.slug,
                 context: { id: node.id, path: node.frontmatter.path },
             })
