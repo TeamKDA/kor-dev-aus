@@ -1,0 +1,29 @@
+.issue-list-item {
+    padding: 2rem 0;
+
+    &__heading {
+        padding: 0;
+    }
+
+    &__index {
+        padding: 0 1rem 0 0;
+        font-size: 1.1rem;
+    }
+
+    &__date {
+        padding: .4rem 0;
+        // font-weight: 300;
+        font-size: .9rem;
+        color: scale-color(#212529, $lightness: 40%);
+    }
+
+    &__link {
+    }
+    
+    &__excerpt {
+        color: #212529;
+        font-size: 1.4rem;
+        padding: 0;
+        margin: 0;
+    }
+}
