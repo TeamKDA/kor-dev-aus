@@ -5,10 +5,12 @@ import './styles.scss'
 const IssueListItem = ({ index, path, date, title, excerpt }) => {
     return (
         <div className="issue-list-item">
-            <div className="issue-list-item__heading">
-                <span className="issue-list-item__index">{title}</span>
-            </div>
-            <div className="issue-list-item__date">{date}</div>
+            <Link to={path} className="issue-list-item__link">
+                <div className="issue-list-item__heading">
+                    <span className="issue-list-item__index">{title}</span>
+                </div>
+                <div className="issue-list-item__date">{date}</div>
+            </Link>
         </div>
     )
 }
