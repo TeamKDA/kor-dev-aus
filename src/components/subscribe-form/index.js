@@ -1,11 +1,13 @@
 import React, { Fragment } from 'react'
 import './styles.scss'
 
-const SubscribeForm = () => {
+const SubscribeForm = ({ className, titleInWhite }) => {
+    const classes = `subscribe-form ${className}`
+    const titleClass = `subscribe-form__title ${titleInWhite ? 'subscribe-form__title--white' : ''}`
     return (
         <Fragment>
-            <div className="subscribe-form">
-                <h5 className="subscribe-form__title">
+            <div className={classes}>
+                <h5 className={titleClass}>
                     매달 열리는 개발자 모임과 소식들을 받아보세요
                 </h5>
                 <form
