@@ -4,11 +4,11 @@ import SEO from '../seo'
 import SubscribeForm from '../subscribe-form'
 import './styles.scss'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
-import bgImage1 from '../../images/bg/nate-watson-ArnSNszzd1M-unsplash.jpg'
-import bgImage2 from '../../images/bg/hangah-liong-OBvI8gUVxUY-unsplash.jpg'
-import bgImage3 from '../../images/bg/kevin-xue-DgbmUN7I-ko-unsplash.jpg'
-import bgImage4 from '../../images/bg/peter-zhou-hJ4eYNlL0YA-unsplash.jpg'
-import bgImage5 from '../../images/bg/steven-groeneveld-yuR-UrSBVpM-unsplash.jpg'
+import bgImage1 from '../../images/bg/1.jpg'
+import bgImage2 from '../../images/bg/2.jpg'
+import bgImage3 from '../../images/bg/3.jpg'
+import bgImage4 from '../../images/bg/4.jpg'
+import bgImage5 from '../../images/bg/5.jpg'
 
 const bgImages = [bgImage1, bgImage2, bgImage3, bgImage4, bgImage5]
 
@@ -26,7 +26,7 @@ export default ({ post }) => {
         <Layout>
             <SEO title={frontmatter.title} />
             <div className="issue">
-                <img src={img} className="issue__bg" />
+                <img src={img} className="issue__bg" alt="melbourne" />
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-xl-8">
