@@ -11,4 +11,18 @@ Open [http://localhost:8000/___graphql](http://localhost:8000/___graphql) for Gr
 
 ## Deployment
 
+We deploy and host our web site in Netlify.
 Merging into the master branch is all you need to deploy to Production.
+
+## Tech stack
+- React
+- Gatsby
+- SASS
+
+## How to create new post
+
+Open `src/components` folder and create a new mark down file by copying existing one
+
+## Contribution
+
+Fork -> Send a PR
