@@ -9,22 +9,12 @@ import bgImage2 from '../../images/bg/2.jpg'
 import bgImage3 from '../../images/bg/3.jpg'
 import bgImage4 from '../../images/bg/4.jpg'
 import bgImage5 from '../../images/bg/5.jpg'
+import getUrlParams from '../../util/getUrlParams'
 
 const bgImages = [bgImage1, bgImage2, bgImage3, bgImage4, bgImage5]
 
-function getUrlParams(search) {
-    let hashes = search.slice(search.indexOf('?') + 1).split('&')
-    let params = {}
-    hashes.map(hash => {
-        let [key, val] = hash.split('=')
-        params[key] = decodeURIComponent(val)
-    })
-
-    return params
-}
-
 export default ({ post }) => {
-    const { cid, eid } = getUrlParams(window.location.search)
+    const { cid, eid } = getUrlParams()
     console.log(cid, eid);
     const [img, setImg] = useState(bgImage1)
     useEffect(() => {
