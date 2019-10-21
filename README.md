@@ -67,10 +67,15 @@ Open `src/components` folder and create a new mark down file by copying existing
   - Modern stack
 
 #### Announcement API
-- What it does? 채워주세요
+- What it does? 
+  - This api is a proxy api to connect with MailChimp APIs
+  - It also persists API data on MySQL, like as RSVP
+  - KDA UI currently uses this API for RSVP temporary
 - Repo: [KorDevAus-Announcement-API](https://github.com/TeamKDA/KorDevAus-Announcement-API)
-- Java
-- 변경 사항이 있으면 채워주세요
+- Java 1.8+, SprintBoot, Apache Camel(for REST) + Swagger + Mysql 
+- [Jasypt](http://www.jasypt.org) is used to encrypt credentials and `APP_ENC` env parameter is required on runtime environment to up and running the app. (Ask to Admin to get this) 
+- Runtime : Azure Web App or Cloud Foundary(Pivotal Web App) or any jvm 1.8+ runtime
+- Currently api is temporary running on Cloud Foundary for 8 months free
 
 #### User API
 - What it does? 채워주세요
