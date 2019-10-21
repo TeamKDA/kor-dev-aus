@@ -42,6 +42,7 @@ Open `src/components` folder and create a new mark down file by copying existing
 
 2. Fork the repo you want to contribute
 3. Send a beautiful PR
+  - Please just make a PR small so that easy to review it
 
 ## High leve architecture
 #### UI
