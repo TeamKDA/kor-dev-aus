@@ -52,7 +52,7 @@
   - Modern stack
 
 
-## Where we are heading?
+## Where are we heading?
 - Less cost required cloud services e.g. Netlify, Firebase
 - Simple architecture to understand so that contributors easy to pickup
 
