@@ -1,7 +1,15 @@
+
+
 ## Local development
 
+#### Pre-requisites
+- nvm
+- yarn
+- Run below commands
+
 ```
-nvm use (if node v10.16.0 is not installed)
+nvm install (Only first time if node v10.16.0 is not installed)
+nvm use (Just in case you are using many different versions of node)
 yarn install
 yarn develop
 ```
@@ -24,12 +32,18 @@ Merging into the master branch is all you need to deploy to Production.
 Open `src/components` folder and create a new mark down file by copying existing one
 
 ## Contribution
-
-Fork -> Send a PR
+1. Find what to add/fix/update in the [Project dashboard](https://github.com/TeamKDA/KorDevAus/projects/2)
+  - High priorities
+    - User signup using Firebase Auth SDK
+    - Make a RSVP
+    - Show meetup history
+2. Fork the repo you want to contribute
+3. Send a beautiful PR
 
 ## High leve architecture
 #### UI
 - Web interface for https://koreandevelopersaustralia.org
+
 - Before
   - Repo: [KorDevAus](https://github.com/TeamKDA/KorDevAus)
   - ASP.NET CORE2, jQuery
@@ -40,6 +54,10 @@ Fork -> Send a PR
   - Repo: [kor-dev-aus](https://github.com/TeamKDA/kor-dev-aus)
   - React, Gatsby, GraphQL
   - Static web site running on Netlify
+
+- Benefits of changing platform
+  - Cost 
+  - Modern stack
 
 ##### Announcement API
 - What it does? 채워주세요
