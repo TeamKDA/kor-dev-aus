@@ -37,6 +37,9 @@ Open `src/components` folder and create a new mark down file by copying existing
     - User signup using Firebase Auth SDK
     - Make a RSVP
     - Show meetup history
+
+![](./src/images/project_dashboard.png)
+
 2. Fork the repo you want to contribute
 3. Send a beautiful PR
 
@@ -44,22 +47,24 @@ Open `src/components` folder and create a new mark down file by copying existing
 #### UI
 - Web interface for https://koreandevelopersaustralia.org
 
-- Before
+- Old
   - Repo: [KorDevAus](https://github.com/TeamKDA/KorDevAus)
   - ASP.NET CORE2, jQuery
   - Traditional Server rendering web site
   - Azure Web App 
+  ![](./src/images/old_website.png)
 
-- After
+- New
   - Repo: [kor-dev-aus](https://github.com/TeamKDA/kor-dev-aus)
   - React, Gatsby, GraphQL
   - Static web site running on Netlify
+  ![](./src/images/new_website.png)
 
 - Benefits of changing platform
   - Cost 
   - Modern stack
 
-##### Announcement API
+#### Announcement API
 - What it does? 채워주세요
 - Repo: [KorDevAus-Announcement-API](https://github.com/TeamKDA/KorDevAus-Announcement-API)
 - Java
