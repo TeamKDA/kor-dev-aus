@@ -37,6 +37,7 @@ Open `src/components` folder and create a new mark down file by copying existing
     - User signup using Firebase Auth SDK
     - Make a RSVP
     - Show meetup history
+    - Provides nice previews when sharing on social medias
 
 ![](./src/images/project_dashboard.png)
 
@@ -87,6 +88,10 @@ Open `src/components` folder and create a new mark down file by copying existing
 - Repo: [KorDevAus-RSVP-API](https://github.com/TeamKDA/KorDevAus-RSVP-API)
 - 변경 사항이 있으면 채워주세요
 
+
+#### Where we are heading
+- Less cost required cloud services
+- Simple architecture to understand so that contributors easy to pickup
 
 
 
