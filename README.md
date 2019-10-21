@@ -45,7 +45,7 @@ Open `src/components` folder and create a new mark down file by copying existing
 3. Send a beautiful PR
   - Please just make a PR small so that easy to review it
 
-## High leve architecture
+## High level architecture
 #### UI
 - Web interface for https://koreandevelopersaustralia.org
 
@@ -94,7 +94,7 @@ Open `src/components` folder and create a new mark down file by copying existing
 - 변경 사항이 있으면 채워주세요
 
 
-#### Where we are heading
+## Where we are heading
 - Less cost required cloud services
 - Simple architecture to understand so that contributors easy to pickup
 
