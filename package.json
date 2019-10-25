@@ -8,6 +8,7 @@
 		"@mdx-js/mdx": "^1.4.0",
 		"@mdx-js/react": "^1.4.0",
 		"babel-plugin-styled-components": "^1.10.4",
+		"firebase": "^7.2.2",
 		"gatsby": "^2.10.0",
 		"gatsby-image": "^2.2.1",
 		"gatsby-plugin-google-analytics": "^2.1.4",
@@ -27,6 +28,7 @@
 		"prop-types": "^15.7.2",
 		"react": "^16.8.6",
 		"react-dom": "^16.8.6",
+		"react-firebaseui": "^4.0.0",
 		"react-helmet": "^5.2.1"
 	},
 	"devDependencies": {

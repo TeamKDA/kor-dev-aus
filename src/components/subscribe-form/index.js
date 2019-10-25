@@ -1,48 +1,53 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState, useEffect } from 'react'
+import firebase from 'firebase'
+import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth'
 import './styles.scss'
 
+const config = {
+    apiKey: 'AIzaSyCeELCTWYtsCnW6obNjAN_mf6eXGOSjilM',
+    authDomain: 'teamkda-2eb3b.firebaseapp.com',
+}
+firebase.initializeApp(config)
+const uiConfig = {
+    signInFlow: 'popup',
+    signInOptions: [
+      firebase.auth.GoogleAuthProvider.PROVIDER_ID
+    ],
+    callbacks: {
+        // Avoid redirects after sign-in.
+        signInSuccessWithAuthResult: () => false
+    }
+}
+const status = {
+    NOT_KNOWN: 'NOT_KNOWN',
+    SIGN_IN: 'SIGN_IN',
+    SIGN_OUT: 'SIGN_OUT'
+}
+
 const SubscribeForm = ({ className, titleInWhite }) => {
+    const [signInStatus, setSignInStatus] = useState(status.Not_KNOWN)
     const classes = `subscribe-form ${className}`
     const titleClass = `subscribe-form__title ${titleInWhite ? 'subscribe-form__title--white' : ''}`
+    useEffect(() => {
+        const unregisterAuthObserver = firebase.auth().onAuthStateChanged(user => {
+            setSignInStatus(user ? status.SIGN_IN : status.SIGN_OUT)
+        })
+        return () => {
+            unregisterAuthObserver()
+        }
+    }, [signInStatus]);
+
     return (
         <Fragment>
             <div className={classes}>
-                <h5 className={titleClass}>
-                    매달 열리는 개발자 모임과 소식들을 받아보세요
-                </h5>
-                <form
-                    action="#"
-                    method="post"
-                    className="xform-inline"
-                    target="_blank"
-                >
-                    <div className="form-row">
-                        <div className="col-md-8">
-                            <div className="form-group">
-                                <input
-                                    type="email"
-                                    required
-                                    defaultValue=""
-                                    name="EMAIL"
-                                    className="form-control form-control-lg"
-                                    placeholder="이메일 주소"
-                                />
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="form-group">
-                                <button
-                                    readOnly
-                                    type="submit"
-                                    name="subscribe"
-                                    className="btn btn-primary btn-block btn-lg"
-                                >
-                                    Subscribe
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+                {signInStatus === status.SIGN_OUT && (
+                    <>
+                        <h5 className={titleClass}>
+                            매달 열리는 개발자 모임과 소식들을 받아보세요
+                        </h5>
+                        <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()}/>
+                    </>
+                )}
             </div>
         </Fragment>
     )

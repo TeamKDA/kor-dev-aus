@@ -14,9 +14,9 @@ import getUrlParams from '../../util/getUrlParams'
 const bgImages = [bgImage1, bgImage2, bgImage3, bgImage4, bgImage5]
 
 export default ({ post }) => {
-    const { cid, eid } = getUrlParams()
-    console.log(cid, eid);
     const [img, setImg] = useState(bgImage1)
+    const { frontmatter, body } = post
+    const { cid, eid } = getUrlParams()
     useEffect(() => {
         setTimeout(() => {
             const currentIndex = bgImages.findIndex(bgImage => bgImage === img)
@@ -24,7 +24,7 @@ export default ({ post }) => {
             setImg(bgImages[nextIndex])
         }, 10000)
     }, [img])
-    const { frontmatter, body } = post
+    
     return (
         <Layout>
             <SEO title={frontmatter.title} />
@@ -35,7 +35,8 @@ export default ({ post }) => {
                         <div className="col-xl-8">
                             <div className="issue__hero row justify-content-center">
                                 <div className="col-lg-8">
-                                    <SubscribeForm className="issue__subscribe-form" titleInWhite />
+                                    <SubscribeForm
+                                        className="issue__subscribe-form" titleInWhite />
                                 </div>
                             </div>
                             <div className="issue__content">
