@@ -15,4 +15,16 @@
             margin-bottom: 1.5rem;    
         }
     }
+
+    &__username {
+        color: #fff;
+        font-weight: 800;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, .90);
+        text-align: center;
+        margin-top: 80px;
+
+        @media (min-width: 576px) {
+            font-size: 2rem;    
+        }
+    }
 }

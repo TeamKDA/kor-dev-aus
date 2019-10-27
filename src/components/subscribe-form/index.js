@@ -27,11 +27,13 @@ const status = {
 
 const SubscribeForm = ({ className, titleInWhite }) => {
     const [signInStatus, setSignInStatus] = useState(status.Not_KNOWN)
+    const [currentUser, setCurrentUser] = useState()
     const classes = `subscribe-form ${className}`
     const titleClass = `subscribe-form__title ${titleInWhite ? 'subscribe-form__title--white' : ''}`
     useEffect(() => {
         const unregisterAuthObserver = firebase.auth().onAuthStateChanged(user => {
             setSignInStatus(user ? status.SIGN_IN : status.SIGN_OUT)
+            setCurrentUser(user)
         })
         return () => {
             unregisterAuthObserver()
@@ -48,6 +50,9 @@ const SubscribeForm = ({ className, titleInWhite }) => {
                         </h5>
                         <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()}/>
                     </>
+                )}
+                {signInStatus === status.SIGN_IN && currentUser && (
+                    <h4 className="subscribe-form__username">{`${currentUser.displayName}님 반갑습니다`}</h4>
                 )}
             </div>
         </Fragment>
