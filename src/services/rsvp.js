@@ -1,8 +1,7 @@
 const BASE_URL = 'https://kdapi.cfapps.io'
-const AUTH_KEY = btoa('teamkda:AMaJ9xpQC9qD6scR')
+const AUTH_KEY = 'dGVhbWtkYTpBTWFKOXhwUUM5cUQ2c2NS'
 
-const headers = new Headers()
-headers.set('Authorization', `Basic ${AUTH_KEY}`)
+const headers = { 'Authorization': `Basic ${AUTH_KEY}` }
 
 export const getRsvp = async ({ campaignId, emailId }) => {
     const url = `${BASE_URL}/api/v1/rsvps/${campaignId}/${emailId}`
