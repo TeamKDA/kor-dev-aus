@@ -11,7 +11,7 @@ import './styles.scss'
 
 export default ({ post }) => {
     const { frontmatter, body } = post
-    const [userRegistered, setUserRegistered] = useState()
+    const [userRegistered, setUserRegistered] = useState(null)
     const [userParam, setUserParam] = useState()
     useEffect(() => {
         async function findUserRegistered() {
@@ -38,6 +38,7 @@ export default ({ post }) => {
         try{
             setUserRegistered(false)
             await cancel({ campaignId: userParam.cid, emailId: userParam.eid })
+            alert('취소되었습니다')
         }catch{
             setUserRegistered(true)
             alert('죄송합니다. 취소중 에러가 발생했습니다.')

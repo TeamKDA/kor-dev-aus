@@ -3,11 +3,12 @@ import './styles.scss'
 
 const RsvpButton = ({ userRegistered, register, cancel }) => {
     let question
+    if (userRegistered == null) return null
     if (userRegistered) {
         question = (
             <>
-                <span className="rsvp-button__label">이미 등록하셨습니다. 취소하시겠습니까?</span>
-                <button type="button" className="btn btn-primary" onClick={cancel}>이번엔 참석이 어렵습니다 😭</button>
+                <h4 className="rsvp-button__label">참석 신청 되셨습니다. 밋업날 만나요 🙌</h4>
+                <button type="button" className="btn btn-outline-primary" onClick={cancel}>신청 취소</button>
             </>
         )
     }else{
