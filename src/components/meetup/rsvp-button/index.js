@@ -3,7 +3,6 @@ import './styles.scss'
 
 const RsvpButton = ({ userRegistered, register, cancel }) => {
     let question
-    if (userRegistered == null) return null
     if (userRegistered) {
         question = (
             <>
