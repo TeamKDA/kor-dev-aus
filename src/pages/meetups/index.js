@@ -15,6 +15,7 @@ export const pageQuery = graphql`
                     date(formatString: "YYYY년 M월 DD일")
                     path
                     title
+                    subTitle
                     excerpt
                 }
             }
