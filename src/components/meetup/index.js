@@ -57,8 +57,8 @@ export default ({ post }) => {
                             <h3 className="issue__title">
                                 {frontmatter.title}
                             </h3>
-                            <p className="issue__date">
-                                {frontmatter.date}
+                            <p className="issue__subtitle">
+                                {frontmatter.subTitle}
                             </p>
                             {userParam && (
                                 <RsvpButton
