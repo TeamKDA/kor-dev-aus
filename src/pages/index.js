@@ -7,7 +7,7 @@ export const pageQuery = graphql`
         allMdx(sort: { order: DESC, fields: [frontmatter___date] }, limit: 1) {
             nodes {
                 frontmatter {
-                    date(formatString: "YYYY/MM/DD")
+                    date
                     path
                     title
                     subTitle

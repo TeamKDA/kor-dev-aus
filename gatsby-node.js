@@ -47,7 +47,7 @@ exports.createPages = ({ graphql, actions }) => {
                 path: node.frontmatter.path,
                 component: meetupTemplate,
                 slug: node.fields.slug,
-                context: { id: node.id, path: node.frontmatter.path },
+                context: { id: node.id },
             })
         })
     })

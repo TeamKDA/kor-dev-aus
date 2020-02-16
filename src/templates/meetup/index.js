@@ -6,7 +6,7 @@ export const pageQuery = graphql`
     query($id: String!) {
         mdx(id: { eq: $id }) {
             frontmatter {
-                date(formatString: "YYYY년 M월 DD일")
+                date
                 path
                 title
                 subTitle

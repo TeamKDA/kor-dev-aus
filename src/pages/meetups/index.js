@@ -12,7 +12,7 @@ export const pageQuery = graphql`
         ) {
             nodes {
                 frontmatter {
-                    date(formatString: "YYYY년 M월 DD일")
+                    date
                     path
                     title
                     subTitle
