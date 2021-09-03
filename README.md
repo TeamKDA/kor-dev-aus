@@ -8,8 +8,9 @@
 - Run below commands
 
 ```
-nvm install (Only first time if node v10.16.0 is not installed)
+nvm install (v16.5.0)
 nvm use (Just in case you are using many different versions of node)
+npm install -g gatsby-cli
 yarn install
 yarn develop
 ```

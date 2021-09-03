@@ -11,7 +11,7 @@ const Footer = () => {
                             © {new Date().getFullYear()}, 호주 한인 개발자 모임
                         </p>
                         <p className="footer__powered-by">
-                            Powered by Gatsby &amp; Netlify
+                            Powered by Gatsby
                         </p>
                     </div>
                 </div>

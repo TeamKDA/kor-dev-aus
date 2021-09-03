@@ -49,7 +49,15 @@ module.exports = {
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
-        display: `minimal-ui`
+        display: `minimal-ui`,
+        icon: `src/images/favicon/favicon-32x32.png`, // This path is relative to the root of the site.
+        icons: [
+          {
+            src: `src/images/favicon/android-icon-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+        ]
       },
     },
       `gatsby-plugin-sass`,
