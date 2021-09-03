@@ -7,7 +7,7 @@ excerpt: '2021년 8월 모임'
 
 #### 토픽 🚀
 
-- Introduction of Zetaris Networked Data Platform - Jaesung Jun
+1. Introduction of Zetaris Networked Data Platform - Jaesung Jun
 
 #### 시간 ⏰
 
