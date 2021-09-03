@@ -8,10 +8,11 @@ excerpt: '2021년 4월 모임'
 #### 새로운 2021년 2기 운영진 소개합니다. 🚀
 - 박성식 (Sunny Park)
 - 박진 (Jin Park)
+- 고수연 (Serina Ko)
 
 #### 1기 운영진 그동안 수고하셨습니다!🚀
-- @권효중 (Jay Kwon)
-- @박상준 (Alex Park)
+- 권효중 (Jay Kwon)
+- 박상준 (Alex Park)
 
 #### 토픽 🚀
 
