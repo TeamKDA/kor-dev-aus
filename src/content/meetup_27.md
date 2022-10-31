@@ -1,19 +1,19 @@
 ---
-title: '2022년 8월 모임'
-date: '2022-08-25'
-path: '/meetups/2022-08-25/'
-excerpt: '2022년 8월 모임'
+title: '2022년 10월 모임'
+date: '2022-10-27'
+path: '/meetups/2022-10-27/'
+excerpt: '2022년 10월 모임'
 ---
 
 #### 토픽 🚀
 
-1. Domain-Driven Design 'Tackling Complexity in the Heart of Software by Eric Evans'
+1. Blameless PostMortem
     - Raymond Jang
 
 #### 시간 ⏰
 
--   2022년 08월 25일 저녁 7:30 - Melbourne Time
--   2022년 08월 25일 저녁 6:30 - Korean Time
+-   2022년 10월 27일 저녁 7:00 - Melbourne Time
+-   2022년 10월 27일 오후 5:00 - Korean Time
 
 #### 장소 ‍🚶
 
