@@ -1,20 +1,20 @@
 ---
-title: '2023년 03월 모임'
-date: '2023-03-23'
-path: '/meetups/2023-03-23/'
-excerpt: '2023년 3월 모임'
+title: '2023년 05월 모임'
+date: '2023-05-25'
+path: '/meetups/2023-05-25/'
+excerpt: '2023년 5월 모임'
 ---
 
 #### 토픽 🚀
 
-1. Introduction of CircleCI by CircleCI team
+1. Lessons Learnt From Workcation by Ally Kim
 
-2. Introduction of Firmware and MCU by Toto Cho
+2. Kafka Recap by Jin Park
 
 #### 시간 ⏰
 
--   2023년 03월 23일 오후 5:30 - Melbourne Time
--   2023년 03월 23일 오후 3:30 - Korean Time
+-   2023년 05월 25일 오후 6:00 - Melbourne Time
+-   2023년 05월 25일 오후 5:00 - Korean Time
 
 #### 장소 ‍🚶
 
