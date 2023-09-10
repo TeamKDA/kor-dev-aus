@@ -23,8 +23,9 @@ Gatsby enables to generate static html from md files.
 In order to add new KDA Meetup page,
 - go to `src/content` folder.
 - clone the latest `meetup_##.md` file with incresed number.
-- update the contents for new meetup
-- build and test in local 
+- update the contents for new meetup and git commit & push
+- run `gatsby develop` and check everything updated in `http://localhost:8000`
+- build `gatsby build` it
 
 ```
 gatsby develop
