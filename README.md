@@ -7,7 +7,7 @@
 -   Run below commands
 
 ```
-nvm install (v16.5.0)
+nvm install (v18.20.5)
 nvm use (Just in case you are using many different versions of node)
 npm install -g gatsby-cli yarn
 yarn install
