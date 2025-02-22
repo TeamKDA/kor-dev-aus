@@ -26,9 +26,9 @@ jobs:
                       public
                       .cache
                       node_modules
-                  key: ${{ runner.os }}-gatsby-alexhyett-site-build-${{ github.run_id }}
+                  key: ${{ runner.os }}-gatsby-kda-site-build-${{ github.run_id }}
                   restore-keys: |
-                      ${{ runner.os }}-gatsby-alexhyett-site-build-
+                      ${{ runner.os }}-gatsby-kda-site-build-
             - name: Install dependencies
               run: yarn install
             # - name: Run Lint
