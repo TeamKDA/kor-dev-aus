@@ -1,25 +1,25 @@
 ---
-title: '2025년 02월 모임'
-date: '2025-02-04'
-path: '/meetups/2025-02-04/'
-excerpt: '2024년 6월 모임'
+title: '2024년 08월 모임'
+date: '2024-08-28'
+path: '/meetups/2024-08-28/'
+excerpt: '2024년 8월 모임'
 ---
 
 #### 토픽 🚀
 
-1. The journey from solo passion project with no code development to startup - Ally Kim
+1. Understanding and Application of mTLS from a Platform Engineer’s Perspective - Alex Park
 
-2. Discussion on IT Industry Program with the Consulate of the Republic of Korea in Melbourne
+2. Model-Based Machine Learning - Wan Jeon
 
 3. Group Networking
 
 #### 시간 ⏰
 
--   2025년 02월 12일 저녁 5:30 - Melbourne Time
+-   2024년 08월 28일 저녁 5:30 - Melbourne Time
 
 #### 장소 ‍🚶
 
--   RMIT(RMIT Building 8, Level 4, Room 13, 360 Swanston St, Melbourne)
+-   후원 MyOB(168 Cremorne St, Cremorne VIC 3121)
 
 #### 모임 참여
 
