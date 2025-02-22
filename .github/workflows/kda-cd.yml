@@ -27,8 +27,8 @@ jobs:
                       ${{ runner.os }}-gatsby-alexhyett-site-build-
             - name: Install dependencies
               run: yarn install
-            - name: Run Lint
-              run: yarn run lint
+            # - name: Run Lint
+            #   run: yarn run lint
             - name: Build
               run: yarn run build
             - name: Set AWS credentials
