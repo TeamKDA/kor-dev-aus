@@ -63,18 +63,8 @@ Open `src/components` folder and create a new mark down file by copying existing
 
 ## Contribution
 
-1. Find what to add/fix/update in the [Project dashboard](https://github.com/TeamKDA/KorDevAus/projects/2)
-
--   High priorities
-    -   User signup using Firebase Auth SDK
-    -   Make a RSVP
-    -   Show meetup history
-    -   Provides nice previews when sharing on social medias
-
-![](./src/images/project_dashboard.png)
-
-2. Fork the repo you want to contribute
-3. Send a beautiful PR
+1. Create a feature branch and update
+2. Send a PR to main branch
 
 -   Please just make a PR small so that easy to review it
 
