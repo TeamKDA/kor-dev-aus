@@ -1,58 +1,61 @@
 {
-	"name": "kor-dev-aus",
-	"private": true,
-	"description": "The web site for Korean developers in Australia",
-	"version": "0.1.0",
-	"author": "Jay Hyojung Kwon <nicekhj@gmail.com>",
-	"dependencies": {
-		"@mdx-js/mdx": "^1.6.22",
-		"@mdx-js/react": "^1.6.22",
-		"babel-plugin-styled-components": "^1.13.2",
-		"firebase": "^8.2.4",
-		"gatsby": "^3.13.0",
-		"gatsby-image": "^3.11.0",
-		"gatsby-plugin-google-analytics": "^3.13.0",
-		"gatsby-plugin-manifest": "^3.13.0",
-		"gatsby-plugin-mdx": "^2.13.0",
-		"gatsby-plugin-offline": "^4.13.0",
-		"gatsby-plugin-react-helmet": "^4.13.0",
-		"gatsby-plugin-sass": "^4.13.0",
-		"gatsby-plugin-sharp": "^3.13.0",
-		"gatsby-remark-prismjs": "^5.10.0",
-		"gatsby-source-filesystem": "^3.13.0",
-		"gatsby-transformer-remark": "^4.10.0",
-		"gatsby-transformer-sharp": "^3.13.0",
-		"node-sass": "^8.0.0",
-		"prism-themes": "^1.8.0",
-		"prismjs": "^1.24.1",
-		"prop-types": "^15.7.2",
-		"react": "^17.0.2",
-		"react-dom": "^17.0.2",
-		"react-firebaseui": "^5.0.2",
-		"react-helmet": "^6.1.0"
-	},
-	"devDependencies": {
-		"@babel/core": "^7.15.4",
-		"prettier": "^2.3.2",
-		"rebuild-node-sass": "^1.1.0"
-	},
-	"keywords": [
-		"gatsby"
-	],
-	"license": "MIT",
-	"scripts": {
-		"prebuild": "rebuild-node-sass",
-		"build": "gatsby build",
-		"develop": "gatsby develop",
-		"format": "prettier --write src/**/*.js src/components/**/*.js",
-		"start": "npm run develop",
-		"serve": "gatsby serve"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/gatsbyjs/gatsby-starter-default"
-	},
-	"bugs": {
-		"url": "https://github.com/gatsbyjs/gatsby/issues"
-	}
+    "name": "kor-dev-aus",
+    "private": true,
+    "description": "The web site for Korean developers in Australia",
+    "version": "0.1.0",
+    "author": "Jay Hyojung Kwon <nicekhj@gmail.com>",
+    "dependencies": {
+        "@mdx-js/mdx": "^1.6.22",
+        "@mdx-js/react": "^1.6.22",
+        "babel-plugin-styled-components": "^1.13.2",
+        "firebase": "^8.2.4",
+        "gatsby": "^3.13.0",
+        "gatsby-image": "^3.11.0",
+        "gatsby-plugin-google-analytics": "^3.13.0",
+        "gatsby-plugin-manifest": "^3.13.0",
+        "gatsby-plugin-mdx": "^2.13.0",
+        "gatsby-plugin-offline": "^4.13.0",
+        "gatsby-plugin-react-helmet": "^4.13.0",
+        "gatsby-plugin-sass": "^4.13.0",
+        "gatsby-plugin-sharp": "^3.13.0",
+        "gatsby-remark-prismjs": "^5.10.0",
+        "gatsby-source-filesystem": "^3.13.0",
+        "gatsby-transformer-remark": "^4.10.0",
+        "gatsby-transformer-sharp": "^3.13.0",
+        "node-sass": "^8.0.0",
+        "prism-themes": "^1.8.0",
+        "prismjs": "^1.24.1",
+        "prop-types": "^15.7.2",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-firebaseui": "^5.0.2",
+        "react-helmet": "^6.1.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.15.4",
+        "prettier": "^2.3.2",
+        "rebuild-node-sass": "^1.1.0"
+    },
+    "keywords": [
+        "gatsby"
+    ],
+    "license": "MIT",
+    "scripts": {
+        "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
+        "prebuild": "rebuild-node-sass",
+        "build": "gatsby build",
+        "develop": "gatsby develop",
+        "clean": "gatsby clean",
+        "format": "prettier --write src/**/*.js src/components/**/*.js",
+        "start": "npm run develop",
+        "serve": "gatsby serve",
+        "deploy": "gatsby-plugin-s3 deploy --yes; export AWS_PAGER=\"\"; aws cloudfront create-invalidation --distribution-id E358EBUK84431U --paths '/*';"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    },
+    "bugs": {
+        "url": "https://github.com/gatsbyjs/gatsby/issues"
+    }
 }
