@@ -17,7 +17,7 @@ excerpt: '2026년 02월 모임'
 
 #### 장소 ‍🚶
 
--   후원 : Block (100 Queen St)
+-   후원 : Afterpay Melbourne Office(Level 5-8, 100 Queen Street Melbourne)
 
 #### 모임 참여
 
