@@ -23,5 +23,5 @@ excerpt: '2024년 8월 모임'
 
 #### 모임 참여
 
--   Slack: https://kor-devs-au.slack.com
+-   MS teams: https://teams.live.com/l/community/FEAr2ayHC_TXWtAzQU
 -   대상 : 호주 IT에 관심있고 기여하고 싶은자 모두
